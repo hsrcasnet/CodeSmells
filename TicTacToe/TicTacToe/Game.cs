@@ -1,20 +1,22 @@
 ﻿using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace TicTacToe
 {
     public class Tile
     {
         public int X {get; set;}
+
         public int Y {get; set;}
+
         public char Symbol {get; set;}
     }
 
     public class Board
     {
-       private List<Tile> _plays = new List<Tile>();
-       
+        private List<Tile> _plays = new List<Tile>();
+
         public Board()
         {
             for (int i = 0; i < 3; i++)
