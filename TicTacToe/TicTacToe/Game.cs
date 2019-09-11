@@ -4,6 +4,10 @@ using System.Linq;
 
 namespace TicTacToe
 {
+
+
+
+
     public class Tile
     {
         public int X {get; set;}
@@ -11,6 +15,16 @@ namespace TicTacToe
         public int Y {get; set;}
 
         public char Symbol {get; set;}
+
+        public static string GetCoordinates(Tile tile)
+        {
+            if (tile != null && tile.X != null && tile.Y != null)
+            {
+                return $"{tile.X} / {tile.Y}";
+            }
+
+            return string.Empty;
+        }
     }
 
     public class Board
