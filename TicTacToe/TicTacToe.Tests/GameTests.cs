@@ -4,11 +4,11 @@ using TicTacToe;
 
 namespace TicTacToeTests
 {
-    public class GameShould
+    public class GameTests
     {
         private Game game;
 
-        public GameShould()
+        public GameTests()
         {
            game = new Game();
         }
