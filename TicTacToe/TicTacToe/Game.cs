@@ -48,6 +48,11 @@ namespace TicTacToe
 
        public void AddTileAt(char symbol, int x, int y)
        {
+            if(x < 0 || y < 0)
+            {
+                throw new ArgumentException("Coordinates must be > 0");
+            }
+
            var newTile = new Tile
            {
                X = x,
